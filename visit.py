@@ -1,5 +1,5 @@
-# Visit Contract - Nomadic-Labs Test
-# Author: Ferdinand ATTIVI
+# Visit Contract 
+# Author: Ferdinand
 
 import smartpy as sp
 
