@@ -24,7 +24,6 @@ class Visit(sp.Contract):
     def register(self):
         current_user = sp.sender
         sp.verify(~ self.data.visits.contains(current_user), message="Already registered")
-        self.data.users.add(current_user)
         self.data.visits[current_user].nb_visit = 0
         self.data.visits[current_user].interval = sp.now
 
